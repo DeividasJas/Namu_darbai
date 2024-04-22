@@ -1,0 +1,94 @@
+body {
+    background-color: #38598b;
+    font-family: "Kode Mono", monospace;
+    color: aliceblue;
+}
+
+h1{
+    font-size: 1.5rem;
+    margin: 50px 0;
+    text-align: center;
+}
+.first-color { 
+	background: #233142; 
+}
+	
+.second-color { 
+	background: #455d7a; 
+}
+
+.third-color { 
+	background: #f95959; 
+}
+
+.fourth-color { 
+	background: #e3e3e3; 
+}
+
+.calculator_wrapper{
+    display: grid;
+
+    width: 80%;
+    margin: auto;
+}
+
+.main_grid_section_1{
+height: 50px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+/* ------------------------------------------------------- */
+.main_grid_section_2{
+    height: 150px;
+    background-color: #233142;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+#results{
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+
+.main_grid_section_2 span{
+    font-size: 3rem;
+    margin-right: 50px;
+}
+.main_grid_section_3{
+    /* height: 400px; */
+    background-color: #455d7a; 
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* CALCULATOR GRID PART AND EVERYTHING ELSE ----------------------- */
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+.calculator button {
+    height: 50px;
+}
+
+.btn_reset{
+    grid-column: 1/3;
+}
+.btn_equals{
+    grid-column: 3/5;
+}
+
+button{
+    font-family: "Kode Mono", monospace;
+    font-size: 1.5rem;
+    box-shadow: none;
+    
+}
