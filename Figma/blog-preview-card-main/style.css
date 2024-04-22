@@ -1,0 +1,140 @@
+p,h1,h3{
+    margin: 0;
+}
+
+body {
+    background: var(--Yellow, #F4D04E);
+}
+
+div {
+    /* border: 1px dashed blue; */
+}
+.card {
+    margin: auto;
+    background-color: white;
+    width: 327px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    gap: 24px;
+
+    border-radius: 20px;
+border: 1px solid var(--Black, #111);
+background: var(--Pure-White, #FFF);
+box-shadow: 8px 8px 0px 0px #000;
+}
+
+.first img{
+    height: 200px;
+    border-radius: 10px;
+}
+
+.second{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.learning {
+    /* border-radius: 4px;
+    background: var(--Yellow, #F4D04E); */
+    display: flex;
+    gap
+}
+
+.learning p{
+    padding: 4px 12px;
+    border-radius: 4px;
+    background: var(--Yellow, #F4D04E);
+
+    color: var(--Black, #111);
+font-family: Figtree;
+font-size: 12px;
+font-style: normal;
+font-weight: 800;
+line-height: 150%; /* 18px */
+}
+
+h3{
+    color: var(--Black, #111);
+font-family: Figtree;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 18px */
+}
+
+h1{
+    /* align-self: stretch; */
+
+    color: var(--Black, #111);
+font-family: Figtree;
+font-size: 20px;
+font-style: normal;
+font-weight: 800;
+line-height: 150%; /* 30px */
+}
+
+.description{
+    
+    /* justify-content: center; */
+    color: var(--Grey, #7F7F7F);
+font-family: Figtree;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 21px */
+}
+
+        /* KONTAKTO DIV */
+
+.third {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+}
+ .third img{
+    height: 32px;
+    width: 32px;
+ }
+
+ .third p{
+    color: var(--Black, #111);
+
+/* Body S (Bold) */
+font-family: Figtree;
+font-size: 14px;
+font-style: normal;
+font-weight: 800;
+line-height: 150%; /* 21px */
+ }
+
+
+ footer{
+    color: transparent; /* make the text invisible */
+  user-select: none; /* prevent selection of the text */
+    margin-top: 50px;
+ }
+
+@media screen and (min-width: 1000px) {
+    body {
+        background-color: blue;
+    }
+    .card:hover{
+        cursor: pointer;
+    }
+
+    footer{
+
+    }
+    footer p{
+        text-align: center;
+        color: white;
+    }
+}

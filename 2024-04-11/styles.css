@@ -1,0 +1,27 @@
+.wrapper::after{
+    content: "iam made with ccs not html";
+    /* height: 200px;
+    width: 200px;
+    background-color: lightgray;
+    border-radius: 20%;
+    display: grid;
+    justify-items: center;
+    justify-items: center;
+    place-items: center;    
+    ⬆️sitas centruoja ⬆️div kuris yra gride ⬆️
+
+    margin: auto;
+    display: inline-block;
+    vertical-align: auto; */
+}
+
+.wrapper{
+    background-color: blueviolet;
+    color: black;
+}
+p{
+    background-color: rgb(155, 38, 38);
+}
+div{
+    color: white;
+}

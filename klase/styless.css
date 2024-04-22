@@ -1,0 +1,81 @@
+* {
+    /* border: 1px solid red; */
+}
+body {
+    background-color: white;
+}
+
+.bodywrap{
+    width: 90%;
+    margin: auto;
+    border: 2px solid blue;
+}
+h1,h2{
+  margin: 0;
+}
+
+h1{
+    text-align: center;
+    font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+    font-size: 3em;
+    color: brown;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-family: "Poiret One", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+    font-size: 1.7em;
+    text-align: center;
+}
+.imgwrap{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;  
+
+}
+.imgwrap2{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    width: 100%;
+    height: 100px;
+
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+}
+img {
+    margin: auto;
+       /* width: 100%; */
+    height: 100px;
+}
+
+.foodtype{
+color: rgb(209, 53, 53);
+font-size: 1.2em;
+}
+
+.dishname{
+    font-size: 1.2em;
+}
+
+.dish_description{
+    color: yellowgreen;
+}
+
+.dish_price {
+    font-size: 1.2em;
+    color: black;
+}
+
+p {
+    margin: 5px;
+}

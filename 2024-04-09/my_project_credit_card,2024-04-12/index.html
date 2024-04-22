@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- MAIN GRID WITH EVERYTHING INSIDE -->
+
+    <div class="god_grid">
+        <!-- DIV WITH TWO FLOATING CARDS AND BACKGROUND -->
+
+        <div class="cardDIV">
+            <!-- BACK CARD DIV ------------------------------------------------------>
+            <div class="back_card_container">
+                <div class="card_back">
+                    <!-- <img src="images/bg-card-back.png" alt="" /> -->
+                    <span class="float-cvc" id="float-cvc">000</span>
+                </div>
+            </div>
+
+            <!-- FRONT CARD DIV ---------------------------------------------------- -->
+
+            <div class="front_card_container">
+                <div class="change_to_right">
+                    <div class="card_front">
+                        <img src="images/card-logo.svg" alt="" class="logo" />
+                        <span class="float-card_num" id="float-card_num">0000000000000000</span>
+                        <span class="floatName" id="floatName">Vardenis Pavardenis</span>
+                        <div class="expDate">
+                            <span class="floatMM" id="floatMM">00</span>
+                            <span>/</span>
+                            <span class="floatYY" id="floatYY">00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="transitionDIV">
+            <div class="form_content_grid" id="form_content_grid">
+                <!-- FORM CONTENT -->
+                <form action="" id="card_form" autocomplete="on">
+                    <div class="grid_form">
+
+                        <section id="userName" class="span-4-cols">
+                            <label for="" >HOLDER NAME</label>
+                            <input type="text" id="name" class="span-4-cols" placeholder="pvz. Vardenis Pavardenis"  novalidate/>
+                            <p id="userName_paragraph"></p>
+                        </section>
+
+                        <section id="cardNumber" class="span-4-cols">
+                            <label for="" >CA NUM</label>
+                            <input type="number" id="num" class="span-4-cols" placeholder="pvz. 1234 5678 9123 4567"  novalidate/>
+                            <p id="cardNumber_paragraph"></p>
+                        </section>
+
+
+                        <label for="" class="span-2-cols"> EXP. DATE (MM/YY)</label>
+                        <label for="" class="cvc">CCC</label>
+
+                        <section id="cardMM">
+                            <input type="number" id="mm" placeholder="pvz. 10"  novalidate/>
+                            <p id="cardMM_paragraph"></p>
+                        </section>
+
+                        <section id="cardYY">
+                            <input type="number" id="yy" placeholder="pvz. 26"  novalidate/>
+                            <p id="cardYY_paragraph"></p>
+                        </section>
+
+                        <section id="cardCVC" class="cvc">
+                            <input type="number" id="cvc" class="cvc" placeholder="pvz. 987"  novalidate/>
+                            <p id="cardCVC_paragraph"></p>
+                        </section>
+                        <button type="submit" class="span-4-cols" id="confirm" onclick="showCardInfo()">
+                            Confirm
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- <div class="completed" id="completed">
+                <div class="completed_content">
+                    <img src="/2024-04-09/interactive-card-details-form-main/images/icon-complete.svg" alt="" />
+                    <h3>THANK YOU !</h3>
+                    <p>We've added your card details</p>
+                    <button id="complete_button">Continue</button>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

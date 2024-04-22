@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightcyan;
+    font-size: 1.2em;
+}
+section{
+    margin: auto;
+    width: 90%;
+    background-color: rgb(155, 107, 72);
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 2fr;
+    /* grid-template-rows: 1fr 2fr 1fr; */
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+article{
+    background-color: lightsalmon;
+    border: 1px dashed black;
+    /* margin: 5px; */
+    
+}
+
+.little-one{
+    align-self: start;
+}

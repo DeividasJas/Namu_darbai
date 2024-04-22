@@ -1,0 +1,238 @@
+body {
+    /* background-color: antiquewhite; */
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+h1{
+    color: #5a60ad;
+}
+
+.image1{
+    position: fixed;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+
+.image2{
+    position: fixed;
+    z-index: -2;
+    bottom: 0px;
+    right: 0px;
+    /* background-color: aqua; */
+}
+
+ul{
+    padding-left: 0px;
+    width: 90%;
+    line-height: 30px;
+}
+
+li{
+    list-style: none;
+}
+
+div {
+    /* border: 1px dashed blue; */
+}
+
+.everything {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+/* MOKEJIMO LAIKOTARPIS */
+.period {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+height: 50px;
+    font-size: 1.1em;
+    font-weight: 650;
+    color:#8f93cc;
+}
+
+.firstlabel{
+    align-self: flex-start;
+}
+.secondlabel{
+    align-self: flex-end;
+}
+
+.radio input{
+    display: block;
+    margin: 10px;
+
+}
+.radio input[type='radio'] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #999;
+    border-radius: 45%;
+    outline:none;
+    box-shadow: 1px 1px 5px #999;
+}
+
+.radio input[type='radio']:before {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 50%;
+    /* background-color: white; */
+    border-radius: 50%;
+    margin: 24% auto;
+    
+}
+
+.radio input[type='radio']:checked:before {
+    /* background-color: #999; */
+    content: '';
+    display: block;
+    width: 50%;
+    height: 50%;
+    background-color: #696fdd;
+    border-radius: 50%;
+    margin: 24% auto;
+}
+
+    /* PAGRINDINIS LANGAS */
+main {
+    width: 100%;
+    height: 500px;
+    
+    display: flex;
+    /* gap: 10px; */
+    justify-content: center;
+    align-items: center;
+    /* padding: 40px; */
+    max-width: 1000px;
+    transition: flex-direction 0.5s ease;
+}
+
+.professional {
+    height: 365px;
+    flex-grow: 1.5;
+    color: #fff;
+}
+
+.price {
+    font-size: 3em;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.dolla {
+    font-size: 1.5rem ;
+    padding-right: 11px;
+}
+
+main div {
+    height: 400px;
+    display: flex;
+    flex-direction: column;   
+    text-align: center;
+    padding: 20px;
+    align-content: center;
+    align-items: center;
+    border-radius: 7px;
+    flex-grow: 1;
+    /* max-width: 200; */
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.16);
+    /* background-color: white; */
+}
+
+button {
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8em;
+    color: #fff;
+    font-weight: 550;
+    letter-spacing: 2px;
+    border: none;
+    background-color: white;
+}
+
+
+.basic_master button {
+    background: linear-gradient(135deg, #a3a8f0, #696fdd);
+    /* transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-color */
+
+}
+
+.professional{
+    height: 420px;
+    background:  linear-gradient(135deg, #a3a8f0, #696fdd);
+}
+
+.professional button {
+    color: #8f93cc;
+    font-size: 0.88em;
+}
+
+
+
+
+.basic_master button:hover{
+    background: white;
+    border: 1.5px solid black;
+    color: #5a60ad;
+}
+
+.professional button:hover{
+    background: linear-gradient(135deg, #8c91dd, #696fdd);
+    border: 1.5px solid white;
+    color: #fff;
+
+}
+
+
+
+
+@media screen and (max-width: 734px){
+    body {
+        /* background-color: antiquewhite; */
+    }
+
+    .image1{
+        position: fixed;
+        z-index: -1;
+        top: -20px;
+        left: 0px;
+    }
+    
+    .image2{
+        position: fixed;
+        z-index: -2;
+        bottom: -200px;
+        right: -100px;
+        /* background-color: aqua; */
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        gap: 10px;
+    }
+    
+    main div{
+        width: 300px;
+        box-shadow: 10px 5px 10px 0px rgba(0, 0, 0, 0.16);
+    }
+    .basic_master {
+        background-color: #fff;
+    }
+
+
+}

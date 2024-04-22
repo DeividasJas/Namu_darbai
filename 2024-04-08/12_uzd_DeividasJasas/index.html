@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12 Uzduotis</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Dance Registration</h1>
+    <h4>
+      Fill the registration form below keenly to enter the dancing competition.
+    </h4>
+    <hr />
+    <form action="">
+      <fieldset>
+        <legend>Form</legend>
+        <table>
+          <tbody>
+            <tr>
+              <th>
+                <label for="name">Name</label>
+              </th>
+              <th>
+                <input type="text" id="name" placeholder="First Name" />
+              </th>
+              <th>
+                <input type="text" id="name" placeholder="Last Name" />
+              </th>
+            </tr>
+
+            <tr>
+              <th>
+                <label for="mail">E-Mail</label>
+              </th>
+              <th>
+                <input
+                  type="email"
+                  name="email"
+                  id="mail"
+                  placeholder="youremail@rapapapa.com"
+                />
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <label for="phone_number">Phone Number</label>
+              </th>
+              <th>
+                <input
+                  type="number"
+                  name="phone_number"
+                  id="area_code"
+                  maxlength="3"
+                  placeholder="Area Code"
+                />
+              </th>
+              <th>
+                <input
+                  type="tel"
+                  id="phone_number"
+                  name="phone_number"
+                  maxlength="8"
+                  placeholder="Phone Number"
+                />
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <label for="sex">Gender</label>
+              </th>
+              <th>
+                <input type="radio" name="sex" value="male" id="sex" />Male
+              </th>
+              <th>
+                <input type="radio" name="sex" value="female" id="sex" />Female
+              </th>
+            </tr>
+
+            <!-- ADDRESS -->
+            <tr>
+              <th rowspan="4">
+                <label for="address">Address</label>
+              </th>
+              <th colspan="2">
+                <input
+                  type="text"
+                  name="address"
+                  id="address"
+                  placeholder="Street Address"
+                />
+              </th>
+            </tr>
+            <tr>
+              <th colspan="2">
+                <input
+                  type="text"
+                  name="address_line_2"
+                  id="address"
+                  placeholder="Street Address Line 2"
+                />
+              </th>
+            </tr>
+            <th>
+              <input
+                type="text"
+                name="city"
+                id="address"
+                placeholder="City"
+              />
+            </th>
+            <th>
+              <input
+                type="text"
+                name="state_province"
+                id="address"
+                placeholder="State / Province"
+              />
+            </th>
+            <tr>
+                <th colspan="">
+                    <input type="text" name="postal_zip_code" placeholder="Postal / Zip Code">
+                </th>
+            </tr>
+            <tr class="sumbit">
+                <th colspan="3">
+                    <input type="submit" value="Sumbit">
+                </th>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>

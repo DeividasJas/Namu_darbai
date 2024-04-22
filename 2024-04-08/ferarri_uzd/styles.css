@@ -1,0 +1,108 @@
+body{
+    background-color: firebrick;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    text-shadow: 2px 2px red;
+    color: black;
+    font-size: 4em;
+    background-image: url(foto/Flag_of_Italy.svg);
+    background-size:cover;
+    width: 80%;
+    margin: auto;
+}
+
+main {
+    width: 80%;
+    /* height: 60vh; */
+    background-color: black;
+    box-shadow: 0px 50px 40px 80px black;
+    margin: 100px auto 5px auto;
+
+}
+
+table, th {
+    /* border: 1px solid white; */
+    border-collapse: collapse;
+    
+}
+
+table{
+    max-width: 1100px;
+    min-width: 1050px;
+    margin: auto;
+    text-align: left;
+}
+
+th {
+    font-size: 0.9em;
+    padding-left: 5px;
+}
+
+.logo-img{
+    height: 100px;
+}
+
+
+.ferrariMain img {
+    /* max-width: 1100px; */
+    width: 100%
+}
+
+ul {
+    list-style-image: url(foto/uzduotis_lentele_pratybos/pic3.jpg);
+    columns: 2;
+  }
+
+li {
+    font-size: 0.8em;
+}
+
+/* .ferrariMain {
+    height: 500px;
+    background-image: url("foto/uzduotis_lentele_pratybos/705624.jpg");
+    background-size: cover;
+} */
+
+.logo-img{
+    background-image: url("foto/uzduotis_lentele_pratybos/Ferrari_logo.jpg");
+    height: 92px;
+    width: 153px;
+    background-size: cover;
+    
+}
+
+.f1-img{
+    background-image: url("foto/uzduotis_lentele_pratybos/pic1.jpg");
+    height: 235px;
+    width: 250px;
+    background-size: cover;
+}
+
+.clock-img{
+    background-image: url("foto/uzduotis_lentele_pratybos/pic2.jpg");
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+}
+
+.last-row{
+    background-color: rgb(41, 41, 41);
+    height: 20px;
+    color: grey;
+}
+
+.text-align-right{
+    text-align: right;
+}
+
+footer{
+    text-align: center;
+    width: 1100px;
+    margin: auto;
+    margin-top: 50px;
+    color: grey;
+}

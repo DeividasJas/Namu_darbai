@@ -1,0 +1,164 @@
+body {
+    background: var(--cream-bg, #F2EAE2);
+}
+
+.rectangle {
+    margin: auto;
+    width: 343px;
+    /* height: 611px; */
+    flex-shrink: 0; 
+    border-radius: 5%;
+    background-color: white;
+    padding-bottom: 24px;
+}
+.rectangle,img {
+    width: 343.697px;
+    /* margin: 28px 0; */
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+}
+.perfume{
+    /* background-color: antiquewhite; */
+    height: 15px;
+    
+}
+.perfume_p {
+    color: var(--Aurometal-Saurus, #6C7289);
+font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 5px;
+    position: relative;
+    top: 2px;
+    margin-left: 24px;
+    
+}
+h1 {
+    color: var(--Gunmetal, #1C232B);
+font-feature-settings: 'clig' off, 'liga' off;
+/* Display */
+font-family: Fraunces;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px; /* 100% */
+
+margin: 12px 24px 16px 24px;
+}
+
+.description{
+    color: var(--Aurometal-Saurus, #6C7289);
+    font-feature-settings: 'clig' off, 'liga' off;
+    
+    /* Body */
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px; /* 164.286% */
+    
+    /* position*/
+    margin: 0 24px; 
+    width: 295px;
+    height: 92px;
+}
+
+/* KAINOS */
+.price{
+    margin-left: 24.5px;
+    display: inline-flex;
+justify-content: center;
+align-items: center;
+gap: 19px;
+margin-bottom: 20px;
+}
+.new_price{
+    color: var(--Deep-Aquamarine, #3D8168);
+/* font-feature-settings: 'clig' off, 'liga' off; */
+
+
+/* Display */
+font-family: "Fraunces", serif;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px; /* 100% */
+
+}
+
+.old_price{
+    color: var(--Aurometal-Saurus, #6C7289);
+font-family: "Montserrat";
+font-size: 13px;
+font-style: normal;
+font-weight: 500;
+line-height: 23px; /* 176.923% */
+text-decoration-line: line-through;
+
+
+
+
+
+}
+
+    /* Buy mygtukas */
+
+.mygtukas {
+
+    /* layout */
+width: 295px;
+height: 48px;
+flex-shrink: 0;
+margin: 0 auto;
+display: flex;
+align-items: center;
+/* align-content: center; */
+justify-content: center;
+/* style */
+border-radius: 8px;
+background: var(--Deep-Aquamarine, #3D8168);
+/* margin-bottom: 24px; */
+}
+.mygtukas_img {
+    width: 14.385px;
+height: 16px;
+margin-right: 11.615px;
+
+}
+
+.mygtukas,
+p{
+    color: var(--Pure-White, #FFF);
+font-feature-settings: 'clig' off, 'liga' off;
+
+/* Button Text */
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+}
+
+@media screen and (min-width: 500px) {
+    body {
+        background-color: blue;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        
+    }
+    .rectangle {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+        
+    }
+    .content {
+        background-color: white;
+
+    }
+}
