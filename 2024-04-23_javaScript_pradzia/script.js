@@ -175,14 +175,309 @@ function geriausiaKlase(vidurk1, vidurk2, vidurk3, vidurk4) {
 geriausiaKlase(7, 8, 9.5, 6);
 // -----------------------------------------
 
-function ziemojantysPauksciai(val1,val2,val3){
-    const birdsArray = [val1,val2,val3]
-    birdsArray.sort((a, b) => b - a);
-    console.log(birdsArray);
+function ziemojantysPauksciai(val1, val2, val3) {
+  const birdsArray = [val1, val2, val3];
+  birdsArray.sort((a, b) => b - a);
+  console.log(birdsArray);
 
-    birdsArray.forEach(item => {
-        console.log(item)
-    })    
-    console.log(`Skirtumas tarp didziausio ir maziausio kiekio: ${birdsArray[0] - birdsArray[2]} `);
+  birdsArray.forEach((item) => {
+    console.log(item);
+  });
+  console.log(
+    `Skirtumas tarp didziausio ir maziausio kiekio: ${
+      birdsArray[0] - birdsArray[2]
+    } `
+  );
 }
-ziemojantysPauksciai(1000, 50,350)
+ziemojantysPauksciai(1000, 50, 350);
+
+// ---------------------------------------------------------------
+
+function jonukoProblema(uzdVariantas, a, b) {
+  if (uzdVariantas == 1) {
+    console.log((x = a * b + 3));
+  }
+  if (uzdVariantas == 2) {
+    console.log((x = a + b));
+  }
+  if (uzdVariantas == 3) {
+    console.log((x = a - b));
+  }
+}
+
+jonukoProblema(2, 2, 3);
+// ---------------------------------------------------------------------
+
+const skaiciai = (a, b, c) => {
+  // a1 = a % 3;
+  // b1 = b % 3
+  // c1 = c % 3
+  // const answers = [a1,b1,c1]
+  // console.log(...answers);
+  // const gooodValue = answers.find( (item) => item == 0 )
+  // console.log(`Atsakymas: ${gooodValue}`);
+  if (a % 3 === 0) {
+    return console.log(`Atsakymas: ${a}`);
+  }
+  if (b % 3 === 0) {
+    return console.log(`Atsakymas: ${b}`);
+  }
+  if (c % 3 === 0) {
+    return console.log(`Atsakymas: ${c}`);
+  } else {
+    console.log("ats nera");
+  }
+};
+skaiciai(8, 9, 12);
+// ---------------------------------------------------------------------------------
+// console.log("TRECIA TRECIA TRECIA TRECIA TRECIA TRECIA TRECIA TRECIA");
+
+// const konkursas = (a, b) => {
+//   const intervalas = [];
+//   let sum = 0;
+
+//   for (let = a; a <= b; a++) {
+//     if (a % 6 == 0) {
+//       sum++;
+//     }
+//   }
+//   console.log(`Reikalingas marskineliu skaicius: ${sum}`);
+// };
+// konkursas(31, 62);
+// ----------------------------------------------------------------------------------------
+
+const keliasImokykla = (zingsniai) => {
+  let num = [];
+  let suploja = 0;
+  let spragsi = 0;
+  // 0 ir 5
+
+  for (let i = 1; i <= zingsniai; i++) {
+    num.push(i.toString());
+  }
+  num.forEach((item) => {
+    if (item[item.length - 1] == 0) {
+      suploja++;
+    }
+  });
+  num.forEach((item) => {
+    if (item[item.length - 1] == 5) {
+      spragsi++;
+    }
+  });
+
+  console.log(`Suplojimu bus: ${suploja}. Spragtelejimu bus: ${spragsi}`);
+};
+
+keliasImokykla(426);
+// ***************************************************************************
+// pirma - kiek iskrito snaigiu pirma, kiekLaiko - kiek s snigo. dvigubinasi kiekviena sekunde
+const snaigesUzLango = (pirma, kiekLaiko) => {
+  let ats = 0 + pirma;
+
+  for (let i = 1; i < kiekLaiko; i++) {
+    pirma = pirma * 2;
+    ats += pirma;
+  }
+  console.log(`po ${kiekLaiko} sekundziu, ${ats} snaigiu uz lango`);
+};
+snaigesUzLango(2, 4);
+// 88888888888888888888888888888888888888888888888888888888888888888888888888888888888
+
+const kaledinesEglutes = (n, el) => {
+  let bendrasAukstis = 0;
+
+  for (let i = 0; i < n; i++) {
+    bendrasAukstis += el[i];
+  }
+  // console.log(bendrasAukstis)
+  let vidurkis = bendrasAukstis / 6;
+  console.log(`Eglutes aukscio vidurkiai: ${vidurkis} cm`);
+};
+
+const kaledinesEgl = [167, 134, 145, 156, 155, 176];
+kaledinesEglutes(6, kaledinesEgl);
+// &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+const drauguSkaiciai = (numArr) => {
+  let kiekis = 0;
+  numArr.forEach((number) => {
+    if (number % 2 == 0) {
+      kiekis++;
+    }
+  });
+
+  if (kiekis > 0) {
+    console.log(`Turime: ${kiekis} lyginiu numerius`);
+  } else {
+    console.log("Nera");
+  }
+};
+const drauguSkaic = [5, 3, 99, 55, 35, 47, 11, 63, 51, 91];
+drauguSkaiciai(drauguSkaic);
+// ##########################################################################################
+
+const kauliukai = (kauliukuSkaicius) => {
+  let maxPoints = kauliukuSkaicius * 6;
+
+  let diceValues = [6, 6, 2, 2, 5, 4, 5];
+  let sumOfValues = diceValues.reduce((a, c) => a + c, 0);
+  let loterija = "";
+
+  if (maxPoints / 2 < sumOfValues) {
+    loterija += "laimeta";
+  } else {
+    loterija += "pralaimeta";
+  }
+
+  console.log(`Is viso galima surinkti tasku: ${maxPoints}
+Tomas is viso surinko ${sumOfValues}
+Jo tasku vidurkis ${(sumOfValues / kauliukuSkaicius).toFixed(1)}
+Loterija ${loterija}.`);
+};
+kauliukai(7);
+//  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+const suoliaiPerVirvute = (kiekKartu, bandymai) => {
+  let total = 0;
+  for (let i = 0; i < kiekKartu; i++) {
+    total += bandymai[i];
+  }
+  console.log(`Is viso: ${total}. Vidutiniskai ${total / kiekKartu}`);
+};
+let bandymai = [10, 20];
+suoliaiPerVirvute(2, bandymai);
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+const begimovarzybos = (begikuArr) => {
+  let n = begikuArr.length;
+  let average = begikuArr.reduce((a, c) => a + c, 0) / n;
+  let bestTime = Math.min(...begikuArr);
+  let fasterBy = (average - bestTime).toFixed(2);
+  let fasterByNum = parseFloat(fasterBy);
+
+  console.log(
+    `Greiciausias begiko laikas: ${bestTime} sek. Jis buvo: ${fasterByNum} sek geresnis uz vidurki. vidurkis: ${average.toFixed(
+      2
+    )}`
+  );
+  console.log(bestTime, average, fasterByNum);
+};
+
+const begikuArr = [22, 20, 25, 25];
+begimovarzybos(begikuArr);
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+const pirkiniai = (pirkiniaiArr) => {
+  let totalWeight = 0;
+  let totalPrice = 0;
+  let galeNegales = "";
+  pirkiniaiArr.forEach((pirknys) => {
+    totalWeight += pirknys.svoris;
+    totalPrice += pirknys.kaina;
+  });
+  let avgPrice = totalPrice / pirkiniaiArr.length;
+  let litas = Math.floor(avgPrice / 100);
+  let centas = avgPrice % 100;
+  if (totalWeight <= 5000) {
+    galeNegales = "gales";
+  } else {
+    galeNegales = "negales";
+  }
+
+  console.log(
+    `Pirkinio vidutine kaina: ${litas}Lt ${centas}ct. Petriukas ${galeNegales} parnesti pirkinius`
+  );
+};
+const pirkiniaiArr = [
+  { kaina: 105, svoris: 2000 },
+  { kaina: 1655, svoris: 2550 },
+];
+
+pirkiniai(pirkiniaiArr);
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+console.log(
+  "KETVIRTAS KETVIRTAS KETVIRTAS KETVIRTAS KETVIRTAS KETVIRTAS KETVIRTAS KETVIRTAS KETVIRTAS KETVIRTAS "
+);
+
+const voveryte = (riesutai, voveres) => {
+  let ziemaTrunka = 92;
+  let perDienaVisiSuvalgo = (voveres + 1) * 3;
+
+  let turimiRiesutai = riesutai;
+  let riesutuDienos = 0;
+  // let kiekDienuUzteks = turimiRiesutai / perDienaVisiSuvalgo
+  // let arUzteksZiemai = ""
+  // if(kiekDienuUzteks>ziemaTrunka){
+  //   arUzteksZiemai = "uzteks"
+  // }
+  // console.log(`riesutu sukaupta ${kiekDienuUzteks} dienoms. Riesutu ${arUzteksZiemai} visai ziemai`);
+
+  do {
+    turimiRiesutai -= perDienaVisiSuvalgo;
+    riesutuDienos += 1;
+  } while (turimiRiesutai > 0);
+
+  console.log(riesutuDienos, ziemaTrunka);
+};
+
+voveryte(900, 2);
+
+// ------------------------------------------------------------
+
+const degalai = (talpa, sunaudoja) => {
+  // console.log(sunaudaLitru);
+
+  let diena = 0;
+
+  let degaluTalpa = talpa;
+  // console.log(degaluTalpa);
+
+  while (degaluTalpa > 0) {
+    let sunaudaLitru = sunaudoja;
+
+    if (diena % 2 == 0) {
+      sunaudaLitru = sunaudaLitru * 2;
+    }
+
+    degaluTalpa -= sunaudaLitru;
+    diena = diena + 1;
+  }
+  console.log(`Keliauti bus galima ${diena} dienu / as / a`);
+};
+degalai(20, 5);
+// +=+++++++++++==========+++++++++++++++++++++++++++++++++++++====================
+
+const saldainiai = (n, arr) => {
+  let turimiSaldainiai = n
+
+  let kiekSuvalgeArr = arr
+  console.log(kiekSuvalgeArr[0]);
+  console.log(turimiSaldainiai);
+
+  while (turimiSaldainiai > 0){
+
+    for(let i=0 ;i <kiekSuvalgeArr.length; i++){
+      
+      if(turimiSaldainiai- kiekSuvalgeArr[i] < 0){
+       
+        break
+      } else {
+        turimiSaldainiai -= kiekSuvalgeArr[i]
+
+      }
+
+
+      
+    }
+  }
+
+  console.log('labas');
+}
+
+const saldainiuArr = [7,7,8,5]
+saldainiai(25, saldainiuArr)
+
+
+
